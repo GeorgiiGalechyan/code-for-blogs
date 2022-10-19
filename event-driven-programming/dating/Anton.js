@@ -1,9 +1,12 @@
 const net = require('net')
 
+// Создаём Антона
 const Anton = new net.Socket()
 
+// Задаём координаты Жени
 const Zhenya = { host: '127.0.0.1', port: 2000 }
 
+// Антон пробует познакомиться с Женей
 Anton.connect(Zhenya, () => {
   // Приветствие от Антона
   const greetings =
